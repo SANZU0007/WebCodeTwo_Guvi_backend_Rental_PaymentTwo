@@ -30,8 +30,8 @@ imagesRouter.post("/booking/payment-page/user-pay/:id", async (req, res) => {
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: "payment",
-            success_url: "http://localhost:3000/success",
-            cancel_url: "http://localhost:3000/cancel"
+            success_url: "https://main--rococo-malasada-9ec385.netlify.app/success",
+            cancel_url: "https://main--rococo-malasada-9ec385.netlify.app/cancel"
         });
 
         return res.json({
